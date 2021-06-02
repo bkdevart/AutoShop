@@ -14,6 +14,8 @@
 		CAF24F4C26684198004A730A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF24F4B26684198004A730A /* Assets.xcassets */; };
 		CAF24F4F26684198004A730A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF24F4E26684198004A730A /* Preview Assets.xcassets */; };
 		CAF24F5226684198004A730A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF24F5026684198004A730A /* LaunchScreen.storyboard */; };
+		CAF24F5A2668429C004A730A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F592668429C004A730A /* Person.swift */; };
+		CAF24F5C26684387004A730A /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F5B26684387004A730A /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CAF24F4E26684198004A730A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CAF24F5126684198004A730A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAF24F5326684198004A730A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF24F592668429C004A730A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CAF24F5B26684387004A730A /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				CAF24F4226684197004A730A /* AppDelegate.swift */,
 				CAF24F4426684197004A730A /* SceneDelegate.swift */,
 				CAF24F4626684197004A730A /* ContentView.swift */,
+				CAF24F5B26684387004A730A /* PersonView.swift */,
+				CAF24F592668429C004A730A /* Person.swift */,
 				CAF24F4B26684198004A730A /* Assets.xcassets */,
 				CAF24F5026684198004A730A /* LaunchScreen.storyboard */,
 				CAF24F5326684198004A730A /* Info.plist */,
@@ -148,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF24F5A2668429C004A730A /* Person.swift in Sources */,
 				CAF24F4A26684197004A730A /* AutoShop.xcdatamodeld in Sources */,
 				CAF24F4326684197004A730A /* AppDelegate.swift in Sources */,
+				CAF24F5C26684387004A730A /* PersonView.swift in Sources */,
 				CAF24F4526684197004A730A /* SceneDelegate.swift in Sources */,
 				CAF24F4726684197004A730A /* ContentView.swift in Sources */,
 			);
