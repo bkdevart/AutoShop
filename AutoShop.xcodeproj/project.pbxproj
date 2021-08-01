@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA8BBAAD26B70509003DCE23 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BBAAC26B70509003DCE23 /* PeopleView.swift */; };
 		CAF24F4326684197004A730A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F4226684197004A730A /* AppDelegate.swift */; };
 		CAF24F4526684197004A730A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F4426684197004A730A /* SceneDelegate.swift */; };
 		CAF24F4726684197004A730A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F4626684197004A730A /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA8BBAAC26B70509003DCE23 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		CAF24F3F26684197004A730A /* AutoShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF24F4226684197004A730A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF24F4426684197004A730A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				CAF24F4226684197004A730A /* AppDelegate.swift */,
 				CAF24F4426684197004A730A /* SceneDelegate.swift */,
 				CAF24F4626684197004A730A /* ContentView.swift */,
+				CA8BBAAC26B70509003DCE23 /* PeopleView.swift */,
 				CAF24F5B26684387004A730A /* PersonView.swift */,
 				CAF24F592668429C004A730A /* Person.swift */,
 				CAF24F4B26684198004A730A /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			files = (
 				CAF24F5A2668429C004A730A /* Person.swift in Sources */,
 				CAF24F4A26684197004A730A /* AutoShop.xcdatamodeld in Sources */,
+				CA8BBAAD26B70509003DCE23 /* PeopleView.swift in Sources */,
 				CAF24F4326684197004A730A /* AppDelegate.swift in Sources */,
 				CAF24F5C26684387004A730A /* PersonView.swift in Sources */,
 				CAF24F4526684197004A730A /* SceneDelegate.swift in Sources */,

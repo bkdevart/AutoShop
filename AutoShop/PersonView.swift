@@ -12,8 +12,14 @@ struct PersonView: View {
     
     var body: some View {
         VStack {
-            Text(person.last_name)
-            Text(person.first_name)
+            HStack {
+                Text(person.first_name)
+                Text(person.last_name)
+            }
+            Image(systemName: "person")
+                .resizable()
+                .scaledToFit()
+                .padding()
             Text(person.date_of_birth)
         }
     }
