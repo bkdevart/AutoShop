@@ -14,7 +14,7 @@ struct ContentView: View {
             Form {
                 List {
                     NavigationLink("PeopleView", destination: PeopleView())
-                    NavigationLink("EmployeeView", destination: PeopleView())
+                    NavigationLink("EmployeeView", destination: EmployeesView())
                     NavigationLink("VehicleView", destination: PeopleView())
                 }
                 .navigationTitle("Views")

@@ -1,5 +1,5 @@
 //
-//  PeopleView.swift
+//  EmployeesView.swift
 //  AutoShop
 //
 //  Created by Brandon Knox on 8/1/21.
@@ -7,27 +7,27 @@
 
 import SwiftUI
 
-struct PeopleView: View {
-    @State var results = [Person]()
+struct EmployeesView: View {
+    @State var results = [Employee]()
     
     var body: some View {
         Form {
-            List(results, id: \.id) { person in
-                NavigationLink(destination: PersonView(person: person)) {
+            List(results, id: \.id) { employee in
+                NavigationLink(destination: EmployeeView(employee: employee)) {
                     VStack(alignment: .leading) {
-                        Text("\(person.last_name), \(person.first_name)")
+                        Text("\(employee.username)")
                             .font(.headline)
                     }
                 }
             }
-            .navigationBarTitle("People")
+            .navigationBarTitle("Employees")
         }
         .onAppear(perform: loadData)
     }
     
     func loadData() {
         // create the URL we want to read
-        guard let url = URL(string: "http://127.0.0.1:8000/person") else {
+        guard let url = URL(string: "http://127.0.0.1:8000/employee") else {
             print("Invalid URL")
             return
         }
@@ -39,7 +39,7 @@ struct PeopleView: View {
         URLSession.shared.dataTask(with: request) { data, response, error in
             // handle the result of the networking task
             if let data = data {
-                if let decodedResponse = try?JSONDecoder().decode([Person].self, from: data) {
+                if let decodedResponse = try?JSONDecoder().decode([Employee].self, from: data) {
                     DispatchQueue.main.async {
                         self.results = decodedResponse
                     }
@@ -53,8 +53,8 @@ struct PeopleView: View {
     }
 }
 
-struct PeopleView_Previews: PreviewProvider {
+struct EmployeesView_Previews: PreviewProvider {
     static var previews: some View {
-        PeopleView()
+        EmployeesView()
     }
 }
