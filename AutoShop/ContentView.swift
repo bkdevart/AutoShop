@@ -15,7 +15,7 @@ struct ContentView: View {
                 List {
                     NavigationLink("PeopleView", destination: PeopleView())
                     NavigationLink("EmployeeView", destination: EmployeesView())
-                    NavigationLink("VehicleView", destination: PeopleView())
+                    NavigationLink("VehicleView", destination: VehiclesView())
                 }
                 .navigationTitle("Views")
             }

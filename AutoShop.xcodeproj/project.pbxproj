@@ -11,6 +11,9 @@
 		CA8BBAAF26B7064F003DCE23 /* EmployeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BBAAE26B7064F003DCE23 /* EmployeesView.swift */; };
 		CA8BBAB126B70657003DCE23 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BBAB026B70657003DCE23 /* EmployeeView.swift */; };
 		CA8BBAB326B70675003DCE23 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BBAB226B70675003DCE23 /* Employee.swift */; };
+		CAD3506326B85991008E9A5F /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3506226B85991008E9A5F /* Vehicle.swift */; };
+		CAD3506526B859A3008E9A5F /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3506426B859A3008E9A5F /* VehicleView.swift */; };
+		CAD3506726B859AB008E9A5F /* VehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3506626B859AB008E9A5F /* VehiclesView.swift */; };
 		CAF24F4326684197004A730A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F4226684197004A730A /* AppDelegate.swift */; };
 		CAF24F4526684197004A730A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F4426684197004A730A /* SceneDelegate.swift */; };
 		CAF24F4726684197004A730A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF24F4626684197004A730A /* ContentView.swift */; };
@@ -27,6 +30,9 @@
 		CA8BBAAE26B7064F003DCE23 /* EmployeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesView.swift; sourceTree = "<group>"; };
 		CA8BBAB026B70657003DCE23 /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
 		CA8BBAB226B70675003DCE23 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		CAD3506226B85991008E9A5F /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		CAD3506426B859A3008E9A5F /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		CAD3506626B859AB008E9A5F /* VehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesView.swift; sourceTree = "<group>"; };
 		CAF24F3F26684197004A730A /* AutoShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF24F4226684197004A730A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF24F4426684197004A730A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				CA8BBAAE26B7064F003DCE23 /* EmployeesView.swift */,
 				CA8BBAB226B70675003DCE23 /* Employee.swift */,
 				CA8BBAB026B70657003DCE23 /* EmployeeView.swift */,
+				CAD3506226B85991008E9A5F /* Vehicle.swift */,
+				CAD3506426B859A3008E9A5F /* VehicleView.swift */,
+				CAD3506626B859AB008E9A5F /* VehiclesView.swift */,
 				CA8BBAAC26B70509003DCE23 /* PeopleView.swift */,
 				CAF24F5B26684387004A730A /* PersonView.swift */,
 				CAF24F592668429C004A730A /* Person.swift */,
@@ -171,9 +180,12 @@
 				CA8BBAAD26B70509003DCE23 /* PeopleView.swift in Sources */,
 				CA8BBAB326B70675003DCE23 /* Employee.swift in Sources */,
 				CAF24F4326684197004A730A /* AppDelegate.swift in Sources */,
+				CAD3506726B859AB008E9A5F /* VehiclesView.swift in Sources */,
 				CA8BBAB126B70657003DCE23 /* EmployeeView.swift in Sources */,
 				CA8BBAAF26B7064F003DCE23 /* EmployeesView.swift in Sources */,
+				CAD3506526B859A3008E9A5F /* VehicleView.swift in Sources */,
 				CAF24F5C26684387004A730A /* PersonView.swift in Sources */,
+				CAD3506326B85991008E9A5F /* Vehicle.swift in Sources */,
 				CAF24F4526684197004A730A /* SceneDelegate.swift in Sources */,
 				CAF24F4726684197004A730A /* ContentView.swift in Sources */,
 			);
