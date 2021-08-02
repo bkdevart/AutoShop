@@ -31,8 +31,7 @@ struct EmployeeView_Previews: PreviewProvider {
                                last_name: "Smith",
                                date_of_birth: "2021")
     
-    static let previewEmployee = Employee(id: 1,
-                                          person: previewPerson,
+    static let previewEmployee = Employee(person: previewPerson,
                                           username: "SmithJ",
                                           hireDate: "hired: 2021-01-01",
                                           salary: 40000)
