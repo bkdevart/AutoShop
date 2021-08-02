@@ -20,6 +20,14 @@ struct VehicleView: View {
                 .resizable()
                 .scaledToFit()
                 .padding()
+            List(vehicle.assignee, id: \.id) { employee in
+                NavigationLink(destination: EmployeeView(employee: employee)) {
+                    VStack(alignment: .leading) {
+                        Text("\(employee.username)")
+                            .font(.headline)
+                    }
+                }
+            }
         }
     }
 }
