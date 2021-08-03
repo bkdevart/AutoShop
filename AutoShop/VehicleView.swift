@@ -12,19 +12,26 @@ struct VehicleView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text(vehicle.make)
-                Text(vehicle.model)
+            Group {
+                HStack {
+                    Text(vehicle.make)
+                    Text(vehicle.model)
+                }
+                .font(.title)
+                Text(String(vehicle.year))
+                    .foregroundColor(.secondary)
             }
-            Image(systemName: "car")
+            // add check for image, use generic car if not present
+            Image(vehicle.model)
                 .resizable()
                 .scaledToFit()
                 .padding()
+            Text("Employees assigned to \(vehicle.model)")
+                .font(.headline)
             List(vehicle.assignee, id: \.id) { employee in
                 NavigationLink(destination: EmployeeView(employee: employee)) {
                     VStack(alignment: .leading) {
                         Text("\(employee.username)")
-                            .font(.headline)
                     }
                 }
             }
