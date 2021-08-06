@@ -12,31 +12,46 @@ struct VehicleView: View {
     
     var body: some View {
         VStack {
-            Group {
-                HStack {
-                    Text(vehicle.make)
-                    Text(vehicle.model)
+            VStack {
+                VStack {
+                    HStack {
+                        Text(vehicle.make)
+                        Text(vehicle.model)
+                    }
+                    .font(.title)
+                    .foregroundColor(.white)
+                    Text(String(vehicle.year))
+                        .foregroundColor(.white)
                 }
-                .font(.title)
-                Text(String(vehicle.year))
-                    .foregroundColor(.secondary)
+                .padding(20)
+                // add check for image, use generic car if not present
+                Image(vehicle.model)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 15.0))
+                    .padding()
             }
-            // add check for image, use generic car if not present
-            Image(vehicle.model)
-                .resizable()
-                .scaledToFit()
-                .padding()
-            Text("Employees assigned to \(vehicle.model)")
-                .font(.headline)
-            List(vehicle.assignee, id: \.id) { employee in
-                NavigationLink(destination: EmployeeView(employee: employee)) {
-                    VStack(alignment: .leading) {
-                        Text("\(employee.username)")
+            .background(Color(red: 0.219, green: 0.509, blue: 0.607, opacity: 0.75))
+            .clipShape(RoundedRectangle(cornerRadius: 20.0))
+            .padding(20)
+            
+            VStack {
+                Form {
+                    Section(header: Text("Employees assigned to \(vehicle.model)")
+                                .font(.headline)) {
+                        List(vehicle.assignee, id: \.id) { employee in
+                            NavigationLink(destination: EmployeeView(employee: employee)) {
+                                VStack(alignment: .leading) {
+                                    Text("\(employee.username)")
+                                }
+                            }                 .clipShape(RoundedRectangle(cornerRadius: 20.0))
+                        }
                     }
                 }
             }
         }
     }
+    
 }
 
 struct VehicleView_Previews: PreviewProvider {
